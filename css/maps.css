@@ -18,7 +18,7 @@ p, h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-h1, #descrip {
+h1, #descrip, #repo {
 text-align: center;
 padding: 1rem;
 }
