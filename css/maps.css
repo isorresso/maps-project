@@ -18,9 +18,17 @@ p, h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-h1, .byline, #descrip {
+h1, #descrip {
 text-align: center;
 padding: 1rem;
+}
+
+.byline {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
 }
 
 #mapinfo, #descrip {
@@ -32,12 +40,12 @@ padding: 1rem;
 /* media queries*/
 
 @media screen and (max-width: 1050px) {
-  #mapinfo {
+  #mapinfo, #descrip {
     padding-left: 15rem;
     padding-right: 15rem;
   }
 
-  #mapid {
+  #mapid, #map2 {
     height: 400px;
     width: 65%;
     margin: auto;
@@ -45,12 +53,12 @@ padding: 1rem;
 }
 
 @media screen and (max-width: 900px) {
-  #mapinfo {
+  #mapinfo, #descrip {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 
-  #mapid {
+  #mapid, #map2 {
     height: 300px;
     width: 60%;
     margin: auto;
@@ -58,12 +66,12 @@ padding: 1rem;
 }
 
 @media screen and (max-width: 750px) {
-  #mapinfo {
+  #mapinfo, #descrip {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
-  #mapid {
+  #mapid, #map2 {
     height: 300px;
     width: 70%;
     margin: auto;
@@ -71,12 +79,12 @@ padding: 1rem;
 }
 
 @media screen and (max-width: 570px) {
-  #mapinfo {
+  #mapinfo, #descrip {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  #mapid {
+  #mapid, #map2 {
     height: 250px;
     width: 80%;
     margin: auto;
@@ -84,12 +92,12 @@ padding: 1rem;
 }
 
 @media screen and (max-width: 440px) {
-  #mapinfo {
+  #mapinfo, #descrip {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  #mapid {
+  #mapid, #map2 {
     height: 250px;
     width: 100%;
     margin: auto;
