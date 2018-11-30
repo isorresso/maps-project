@@ -1,0 +1,97 @@
+#mapid {
+  height: 400px;
+  width: 60%;
+  margin: auto;
+}
+
+#map2 {
+  height: 500px;
+  width: 65%;
+  margin: auto;
+}
+
+body {
+  background-color: #EAD2DA;
+}
+
+p, h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, .byline, #descrip {
+text-align: center;
+padding: 1rem;
+}
+
+#mapinfo, #descrip {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* media queries*/
+
+@media screen and (max-width: 1050px) {
+  #mapinfo {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #mapid {
+    height: 400px;
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #mapinfo {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  #mapid {
+    height: 300px;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #mapinfo {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  #mapid {
+    height: 300px;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #mapinfo {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #mapid {
+    height: 250px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #mapinfo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #mapid {
+    height: 250px;
+    width: 100%;
+    margin: auto;
+  }
+}

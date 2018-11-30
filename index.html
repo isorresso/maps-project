@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Maps Project</title>
+    <script src="js/places.json"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+  <link href="css/maps.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <h1>Florida Concert Venues</h1>
+</header>
+
+ <div id="map2"></div>
+
+<p class=byline>By Isabella Sorresso</p>
+<p id=mapinfo>This map displays the 20 most popular concert venues in the state of Florida, along with interesting facts about each one. Most of the arenas are also often used for, or were built for, sporting events such as basketball, hockey and wrestling, but have also hosted some of the most famous names across the globe.</p>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+
+<!--javascript for map-->
+<script>
+var mymap = L.map('map2').setView([28.191, -82.308], 6.19);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/isorresso/cjp1fm8730nls2rn1krkzm4cf/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaXNvcnJlc3NvIiwiYSI6ImNqcDFlcjh2MTA3N3kza283cXNydGlveGIifQ.C8m5YVavqrsDVZN_hqClvg', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18
+}).addTo(mymap);
+
+for (let i = 0; i < places.length; i++) {
+  L.marker( [ places[i].latitude, places[i].longitude ] )
+  .bindPopup( '<h3>' + places[i].venue + '</h3>' + '<p>' + places[i].info + '</p>')
+  .addTo( mymap);
+}
+
+
+
+
+</script>
+
+</body>
+</html>
