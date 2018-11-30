@@ -1,10 +1,4 @@
-#mapid {
-  height: 500px;
-  width: 65%;
-  margin: auto;
-}
-
-#map2 {
+#mapid, #map2 {
   height: 500px;
   width: 65%;
   margin: auto;
@@ -59,8 +53,7 @@ padding: 1rem;
   }
 
   #mapid, #map2 {
-    height: 300px;
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
 }
@@ -73,7 +66,7 @@ padding: 1rem;
 
   #mapid, #map2 {
     height: 300px;
-    width: 70%;
+    width: 90%;
     margin: auto;
   }
 }
@@ -85,13 +78,13 @@ padding: 1rem;
   }
 
   #mapid, #map2 {
-    height: 250px;
-    width: 80%;
+    height: 300px;
+    width: 90%;
     margin: auto;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
   #mapinfo, #descrip {
     padding-left: 1rem;
     padding-right: 1rem;
