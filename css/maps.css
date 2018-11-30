@@ -1,6 +1,6 @@
 #mapid {
-  height: 400px;
-  width: 60%;
+  height: 500px;
+  width: 65%;
   margin: auto;
 }
 
@@ -18,7 +18,7 @@ p, h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-h1, #descrip, #repo {
+h1, #repo {
 text-align: center;
 padding: 1rem;
 }
